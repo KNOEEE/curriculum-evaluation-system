@@ -1,0 +1,23 @@
+/**app.wxss**/
+page{
+  background-color: #f8f8f8;
+  height: 100%;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.main{
+  padding: 10rpx;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 不加borderbox时会往右边挤一点，看不到右边框 */
+page,view,image,swiper,swiper-item,navigator{
+	box-sizing: border-box;
+}
