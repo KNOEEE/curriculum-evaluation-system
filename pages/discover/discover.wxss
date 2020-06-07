@@ -1,0 +1,24 @@
+/* pages/discover/discover.wxss */
+
+.title{
+  font-size: 38rpx;
+}
+
+.courseInfo{
+  display: flex;
+}
+
+.rate{
+  font-size: 34rpx;
+}
+
+.reviewWrap{
+  padding: 15rpx;
+  padding-left: 15rpx;
+  border-radius: 8rpx;
+  background-color: rgb(160, 162, 170)
+}
+
+.shortComm{
+  color: #fff;
+}

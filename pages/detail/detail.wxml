@@ -1,0 +1,25 @@
+<view class="main">
+  <view class="name">{{cname}}</view>
+  <view class="teacher">{{teacher}}</view>
+  <view class="rateList">
+    <view class="loopItem" wx:for="{{indexList}}" wx:key="name">
+      <view class="indexName">{{item.name}}</view>
+      <view class="page-section-title">{{item.intro}}</view>
+      <van-rate bind:change="onChange{{item.id}}" />
+      <van-divider />
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">请在下方输入评价</view>
+    <view class="textarea-wrp">
+      <textarea bindblur="bindTextAreaBlur" style="height: 15em" />
+    </view>
+  </view>
+  <view class="buttonList">
+    <!-- <van-button plain color="#66ccff" bind:click="onSend" >提交</van-button> -->
+    <!-- <van-button plain color="#ee0000" bind:click="onFavor">收藏</van-button> -->
+    <button class="btn" bindtap='onSend'>提交</button>
+    <button class="btn" bindtap='onFavor'>收藏</button>
+  </view>
+  <view class="confirm" wx:if="{{ifrate!=0}}">已评价过</view>
+</view>

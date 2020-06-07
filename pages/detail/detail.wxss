@@ -1,0 +1,64 @@
+/* pages/detail/detail.wxss */
+textarea{
+  width:700rpx;
+  padding: 25rpx 0;
+}
+
+.name{
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.teacher{
+  text-align: center;
+}
+.textarea-wrp{
+  padding: 0 25rpx;
+  background-color: #fff;
+}
+
+.page-section{
+  width: 100%;
+  margin-bottom: 60rpx;
+}
+
+.page-section:last-child{
+  margin-bottom: 0;
+}
+
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.button-voice-play,
+.button-bpPage{
+  margin-top: 20rpx;
+}
+
+.button-hover{
+  background-color: 999;
+}
+.button-file{
+  margin-top: 20rpx;
+}
+
+.confirm{
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.buttonList{
+  display: flex;
+  padding: 10rpx;
+}
+
+button{
+  display: inline-block;
+  width: 300rpx;
+  color: #fff;
+  background-color: #66ccff;
+}
