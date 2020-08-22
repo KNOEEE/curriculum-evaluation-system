@@ -1,0 +1,9 @@
+/* pages/mine/mine.wxss */
+navigator{
+  font-size: 38rpx;
+}
+button{
+  width: 400rpx;
+  background-color: #66ccff;
+  color: #fff;
+}

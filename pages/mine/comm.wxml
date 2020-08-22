@@ -1,0 +1,19 @@
+<view class="main">
+  <view class="name">{{cname}}</view>
+  <view class="teacher">{{teacher}}</view>
+  <view></view>
+  <view class="rateList">
+    <view class="loopItem" wx:for="{{indexList}}" wx:key="name">
+      <view class="indexName">{{item.name}}</view>
+      <view class="page-section-title">{{item.intro}}</view>
+      <van-rate value="{{valueList[index]}}" allow-half readonly />
+      <van-divider />
+    </view>
+  </view>
+  <view class="page-section">
+    <view class="page-section-title">评价:</view>
+    <view class="textarea-wrp">
+      <text class="shortTxt">{{textRec}}</text>
+    </view>
+  </view>
+</view>

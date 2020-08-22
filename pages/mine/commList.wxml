@@ -1,0 +1,19 @@
+<view class="main">
+  <text wx:if="{{ifComm==0}}">这里空空如也~</text>
+  <view class="loopWrap">
+    <navigator url="comm?cid={{item.cid}}&cname={{item.cname}}&stars={{item.stars}}&rate={{item.rate}}&sid={{item.sid}}&&teacher={{item.teacher}}"
+     class="loopItem" wx:for="{{courseList}}" wx:key="*this">
+      <van-divider />
+      <text class="title">{{item.cname}}</text>
+      <view class="teacher">{{item.teacher}}</view>
+      <view class="courseInfo">
+        <view class="stars">
+          <van-rate value="{{item.stars}}" allow-half readonly />
+        </view>
+        <view class="rate">{{item.rate}}</view>
+        
+      </view>
+      <view class="time">评价于{{item.time}}</view>
+    </navigator>
+  </view>
+</view>

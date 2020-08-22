@@ -1,0 +1,13 @@
+/* pages/mine/favList.wxss */
+
+.title{
+  font-size: 38rpx;
+}
+
+.courseInfo{
+  display: flex;
+}
+
+.rate{
+  font-size: 36rpx;
+}

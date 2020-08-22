@@ -1,0 +1,12 @@
+<!--pages/mine/mine.wxml-->
+<view class="main">
+  <view class="sid">{{sid}}</view>
+  <van-divider />
+  <view class="funcList">
+    <navigator url="favList">我的收藏</navigator>
+    <van-divider />
+    <navigator url="commList">我的评价</navigator>
+    <van-divider />
+  </view>
+  <button bindtap="logout"> 退出账号 </button>
+</view>
