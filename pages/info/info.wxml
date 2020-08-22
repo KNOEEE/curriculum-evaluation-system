@@ -1,0 +1,19 @@
+<!--pages/info/info.wxml-->
+<view class="main">
+  <view class="titleWrap">
+  <text class="title">{{cname}}</text>
+  <van-button class="btn" plain color="#66ccff" bind:click="onFavor" size="mini">
+    {{buttonTxt}}
+  </van-button>
+  </view>
+  <view class="teacher">教师：{{teacher}}</view>
+      <view class="courseInfo">
+        <view class="stars">
+          <van-rate value="{{stars}}" allow-half readonly />
+        </view>
+        <view class="rate">{{rate}}</view>
+      </view>
+  <view class="txtLoop" wx:for="{{textList}}" wx:key="unique">
+    <view class="shortComm">{{item}}</view>
+  </view>
+</view>

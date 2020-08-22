@@ -1,0 +1,26 @@
+<!--pages/login/changePwd.wxml-->
+<view class="container">
+  <view class="bd">
+  <form class="login-form">
+          <view class="input-group {{userid_focus ? 'active' : ''}}">
+            <text class="input-label">帐号</text>
+            <input type="number" cursor-spacing="30" id="userid" maxlength="10" placeholder="请输入学号" bindinput="useridInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>
+          <view class="input-group {{passwd_focus ? 'active' : ''}}">
+            <text class="input-label">原始密码</text>
+            <input password="true" cursor-spacing="30" id="passwd" bindinput="passwdInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>
+          <view class="input-group {{new_focus ? 'active' : ''}}">
+            <text class="input-label">新密码</text>
+            <input password="true" cursor-spacing="30" id="newpwd" bindinput="newInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>
+          <view class="input-group {{conf_focus ? 'active' : ''}}">
+            <text class="input-label">确认</text>
+            <input password="true" cursor-spacing="30" id="confirm" bindinput="confirmInput" bindfocus="inputFocus" bindblur="inputBlur" />
+          </view>
+        <view class="confirm-btn" bindtap="post">
+          <text>提交</text>
+        </view>
+  </form>
+  </view>
+</view>

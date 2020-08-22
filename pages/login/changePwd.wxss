@@ -1,0 +1,63 @@
+/* pages/login/changePwd.wxss */
+.container {
+  background: #f4f4f4;
+  align-items: stretch;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 10rpx;
+  margin: 40rpx 3%;
+  background: #fff;
+  border-radius: 5px;
+  border: 2px solid #f4f4f4;
+  transition: all .25s ease-in-out;
+}
+.input-group.active {
+  border: 2px solid #66ccff;
+}
+.input-label {
+  color: #888;
+  font-size: 13pt;
+  height: 25rpx;
+  line-height: 25rpx;
+  padding: 0 25rpx;
+  border-right: 1px solid #d8d8d8; 
+}
+.input-group input,
+.input-group picker {
+  flex: 1;
+  font-size: 13pt;
+  min-height: 52rpx;
+  height: 52rpx;
+  line-height: 52rpx;
+  padding: 0 25rpx;
+}
+.input-placeholder,
+.input-group picker.placeholder {
+  color: #ccc;
+}
+
+.confirm-btn {
+  font-size: 13pt;
+  line-height: 85rpx;
+  height: 85rpx;
+  background: #66ccff;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  margin: 50rpx 3%;
+}
+.confirm-btn:active {
+  opacity: .8;
+}

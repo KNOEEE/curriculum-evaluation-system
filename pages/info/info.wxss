@@ -1,0 +1,32 @@
+/* pages/info/info.wxss */
+
+.titleWrap{
+  display: flex;
+  position: relative;
+}
+.title{
+  font-size: 38rpx;
+}
+
+.btn{
+  position: absolute;
+  right: 20rpx;
+}
+
+.rate{
+  font-size: 34rpx;
+}
+
+.courseInfo{
+  display: flex;
+}
+
+.txtLoop{
+  background-color: #fff;
+  border-bottom: 10rpx;
+  border-radius: 10rpx;
+}
+
+.shortComm{
+  padding: 10rpx;
+}
