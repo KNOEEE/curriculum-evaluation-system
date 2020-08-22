@@ -1,0 +1,13 @@
+<view class='main'>
+  <view class="loopWrap">
+    <navigator url="../detail/detail?cid={{item.cid}}&cname={{item.cname}}&ifrate={{item.rate}}&sid={{sid}}&teacher={{item.teacher}}"
+     class="loopItem" wx:for="{{courseList}}" wx:key="*this">
+      <text class="title">{{item.cname}}</text>
+      <view class="courseInfo">
+        <text class="teacher">{{item.teacher}}</text>
+        <checkbox class="box" disabled checked="{{item.rate}}"></checkbox>
+      </view>
+      <van-divider />
+    </navigator>
+  </view>
+</view>

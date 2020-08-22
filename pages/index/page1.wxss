@@ -1,0 +1,19 @@
+/* pages/index/page1.wxss */
+
+.loopItem{
+  margin-bottom: 20rpx;
+}
+
+.title{
+  font-size: 36rpx;
+}
+
+.courseInfo{
+  position: relative;
+  width: 100%;
+}
+
+.box{
+  position: absolute;
+  right: 20rpx;
+}
