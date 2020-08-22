@@ -1,0 +1,19 @@
+<view class='main'>
+  <text wx:if="{{found==0}}">什么也没有找到QAQ</text>
+  <view class="loopWrap">
+    <navigator url="../info/info?cid={{item.cid}}&cname={{item.cname}}&stars={{item.stars}}&rate={{item.rate}}&sid={{item.sid}}"
+     class="loopItem" wx:for="{{courseList}}" wx:key="*this">
+      <text class="title">{{item.cname}}</text>
+      <view class="courseInfo">
+        <view class="stars">
+          <van-rate value="{{item.stars}}" allow-half readonly />
+        </view>
+        <view class="rate">{{item.rate}}</view>
+      </view>
+      <view class="reviewWrap">
+        <view class="shortComm">{{item.shortTxt}}</view>
+      </view>
+      <van-divider />
+    </navigator>
+  </view>
+</view>
